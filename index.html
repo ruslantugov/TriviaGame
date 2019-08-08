@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Trivia Game</title>
+
+</head>
+
+<body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="../TriviaGame/assets/javascript/app.js"></script>
+
+    <!-- Start page -->
+
+    <div class="container" id="wrapper"> 
+
+        <!-- Trivia Jumbotron -->
+        <!-- <div class="jumbotron" style="background-color: yellow"> -->
+
+            <h1 class="text-center" id="title" style="color: blue"><strong> Totally Trivial Trivia!</strong></h1>
+            <div id="subwrapper" class="col text-center">
+            <button id="start" class="btn btn-primary">Start Game</button>
+            </div>
+        <!-- </div> -->
+
+        <!-- Quiz section -->
+        <!-- <div class="container" style="background-color: yellow"> -->
+    <div id="extraControls" class="hidden" style="background-color: yellow">
+          <form id="quiz"  name="quiz">
+
+                <br>
+                <p class="questions"> 1) Who is the third President of USA? </p>
+                <input type="radio" name="question1" value="ThomasJefferson">Thomas Jefferson<br> <!-- right -->
+                <input type="radio" name="question1" value="JohnAdams ">John Adams<br>
+                <input type="radio" name="question1" value="AbrahamLincoln">Abraham Lincoln<br>
+                <input type="radio" name="question1" value="GeorgeWashington">George Washington<br>
+
+                <br>
+                <p class="questions"> 2) Which State of USA was once part of Mexico? </p>
+                <input type="radio" name="question2" value="Texas">Texas<br><!-- right -->
+                <input type="radio" name="question2" value="Maryland ">Maryland<br>
+                <input type="radio" name="question2" value="NewYork">New York<br>
+                <input type="radio" name="question2" value="Alaska">Alaska<br>
+
+                <br>
+                <p class="questions"> 3) What is the number of states in USA? </p>
+                <input type="radio" name="question3" value="24">24<br>
+                <input type="radio" name="question3" value="50 ">50<br> <!-- right -->
+                <input type="radio" name="question3" value="60">60<br>
+                <input type="radio" name="question3" value="49">49<br>
+
+                <br>
+                <p class="questions"> 4) Which city is known as the Big Apple?</p>
+                <input type="radio" name="question4" value="LosAngeles">Los Angeles<br>
+                <input type="radio" name="question4" value="WashingtonDC">Washington D.C.<br>
+                <input type="radio" name="question4" value="Houston">Houston<br>
+                <input type="radio" name="question4" value="NewYork">New York<br><!-- right -->
+
+                <br>
+                <p class="questions"> 5) Who had the longest tenure as President of USA?</p>
+                <input type="radio" name="question5" value="JohnFKennedy">John F. Kennedy<br>
+                <input type="radio" name="question5" value="FranklinDRoosevelt">Franklin D.Roosevelt<br><!-- right -->
+                <input type="radio" name="question5" value="GeorgeWashington">George Washington<br>
+                <input type="radio" name="question5" value="JamesCarter">James Carter<br>
+
+                <br><button id="myButton">Check</button>
+
+            </form>
+        </div>
+
+         <p id="number_correct"></p>
+
+    <!-- </div> -->
+
+</div>
+
+
+</body>
+
+</html>
