@@ -9,9 +9,11 @@ $(document).ready(function () {
      counter: 10,
      countdown: function () {
          game.counter--;
+
          $('#counter').html(game.counter);
          if(game.counter == 0){
-             console.log("Time is up")
+             clearInterval(timer);
+            //  console.log("Time is up")
              game.done();
             
          }
@@ -22,6 +24,7 @@ $(document).ready(function () {
          $('#subwrapper').remove();
          $('#extraControls').removeClass("hidden");
 
+         //doesn't work
          function endTime() {
     if(timer ==0) {
         clearInterval(timer);
